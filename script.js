@@ -22,7 +22,7 @@ function dataToCard(people) {
        </div>
        <div class="content">
        <p id="message">${people.frase}</p>
-       <p>- ${people.nome}</p>
+       <p class="nome">- ${people.nome}</p>
        </div>
     </div>
     `;
