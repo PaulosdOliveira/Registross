@@ -3,13 +3,22 @@
     padding: 0;
 }
 
-html {
-    background-image: linear-gradient(90deg, lightgray, darkgray);
+html{
+    background-color: black;
 }
 
+div#back-image {
+    background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1304/night_lake_stars_water_smooth-Natural_scenery_Desktop_wallpaper_1366x768.jpg");
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    filter: blur(7px);
+    z-index: 1;
+}
 
 main {
     padding: 10px;
+    position: relative;
 }
 
 
@@ -18,6 +27,9 @@ h1 {
     text-align: center;
     margin: 20px 0 10px 0px;
     font-family: "Fredericka the Great", serif;
+    color: white;
+    z-index: 5;
+    position: relative;
 }
 
 section#quadros {
@@ -28,6 +40,7 @@ section#quadros {
     padding-left: 20px;
     margin: 50px 0px;
     gap: 35px;
+
 }
 
 
@@ -44,12 +57,13 @@ div.card_people {
     overflow: hidden;
 }
 
+
 div.blur {
     z-index: 1;
     position: absolute;
-    background-color: white;
-    opacity: 0.7;
-    filter: blur(400px);
+    background-color: aliceblue;
+    opacity: 0.3;
+    filter: blur(40px);
     height: 100%;
     width: 100%;
 
@@ -60,10 +74,7 @@ div.card-data {
     z-index: 2;
 }
 
-div.card_people:hover {
-    transform: translate(0, -5px);
-    transition-duration: 400ms;
-}
+
 
 div.image {
     display: flex;
@@ -83,9 +94,9 @@ p#message {
     font-weight: bold;
     font-family: "Playfair Display", serif;
     margin-bottom: 8px;
-    color: rgb(43, 43, 43);
+    color: white;
 }
 
 p.nome {
-    color: rgb(68, 67, 67);
+    color: rgb(216, 211, 211);
 }
